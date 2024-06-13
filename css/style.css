@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  --purple: rgb(124, 101, 146);
+  --purple-dark: rgb(81, 69, 92);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  width: 30px; /* Ajuste a largura conforme necessário */
+  height: auto; /* A altura será ajustada proporcionalmente à largura */
+}
+
+.main {
+  text-align: center;
+  color: white;
+  background-color: var(--purple);
+  padding: 20px;
+}
+
+.main h1 {
+  font-weight: bold;
+}
+
+.main p {
+  text-align: center;
+  padding: 10px 100px 10px 100px;
+  line-height: 2;
+  font-family: Arial;
+  @media screen and (max-width: 600px) {
+    padding: 20px; /* Ajuste a margem para telas muito pequenas */
+  }
+}
+
+.diretrizesNavegacao {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  @media screen and (max-width: 600px) {
+    padding: 20px 30px; /* Ajuste a margem para telas muito pequenas */
+  }
+}
+.titulo-diretrizesNavegacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: var(--purple-dark);
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.titulo-diretrizesNavegacao h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.titulo-diretrizesNavegacao img {
+  width: 40px;
+  height: 40px;
+}
+
+.containerOp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+.containerOp a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.containerOp a:hover {
+  color: var(--purple-dark);
+  font-size: 1.2rem;
+}
+
+.containerOp a img {
+  width: 20px;
+}
+
+.secaoDeficiencias {
+  margin-bottom: 1rem;
+}
+
+.titulo-secaoDeficiencias {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: var(--purple);
+  border-radius: 8px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  @media screen and (max-width: 600px) {
+    margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+  }
+}
+
+.container-linkRetornar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkRetornar {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: var(--purple);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.linkRetornar:hover {
+  background-color: var(--purple-dark);
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 12px;
+  }
+}

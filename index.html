@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="imagens/AcessibiWebSimboloAcessibilidade.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleCard.css" />
+    <title>AcessibiWeb</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!--cabeçalho onde estou definindo o NAVBAR-->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        role="navigation"
+        aria-label="Barra de Navegação"
+      >
+        <!--role navigation ARIA para informar barra de navegação-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="imagens/AcessibiWebSimboloAcessibilidade.png"
+              alt="Logotipo"
+            />
+            AcessibiWeb</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#Apresentacao"
+                  aria-label="Ir para Inicio da Pagina Web"
+                >
+                  Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#referencias-diretrizes"
+                  >Referências</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="main">
+      <h1
+        role="heading"
+        tabindex="0"
+        aria-level="1"
+        aria-label="Título Principal"
+      >
+        AcessibiWeb - Diretrizes de Acessibilidade na Web
+      </h1>
+      <!--definindo como Titulo Principal na pagina na ordem ARIA-->
+      <p role="text" tabindex="0" aria-label="Texto Apresentacao">
+        A WEB é uma poderosa ferramenta de inclusão, por este motivo existem
+        diretrizes de acessibilidade web, que podem ser definidas como
+        recomendações que possuem o objetivo de tornar a construção de Web Sites
+        e Conteúdos na Web mais acessíveis a todos os usuários. Esta página
+        reune diversas diretrizes de acessibilidade web categorizadas de acordo
+        com as deficiências as quais podem oferecer suporte quando utilizadas em
+        sites e conteúdos.
+      </p>
+    </main>
+
+    <div class="diretrizesNavegacao container">
+      <div class="titulo-diretrizesNavegacao">
+        <img
+          src="imagens/icone-opcoespesquisa.png"
+          alt="Ícone Opcoes Pesquisa"
+        />
+        <h2 role="text" tabindex="0" aria-label="Acesso-Diretrizes">
+          Consultar Diretrizes de Acessibilidade Web para:
+        </h2>
+      </div>
+      <div class="container" role="group" aria-label="Tipos de Deficiência">
+        <div class="containerOp" role="list">
+          <a
+            href="#diretrizes-deficiencia-visual"
+            aria-label="Ir para Diretrizes sobre Deficiência Visual"
+            role="listitem"
+          >
+            <img src="imagens/icone-leitura.png" alt="Ícone Leitura" />
+            <span> Deficiência Visual</span>
+          </a>
+          <a
+            href="#diretrizes-deficiencia-auditiva"
+            aria-label="Ir para Diretrizes sobre Deficiência Auditiva"
+            role="listitem"
+          >
+            <img src="imagens/icone-leitura.png" alt="Ícone Leitura" />
+            <span> Deficiência Auditiva</span>
+          </a>
+          <a
+            href="#diretrizes-deficiencia-motora"
+            aria-label="Ir para Diretrizes sobre Deficiência Motora"
+            role="listitem"
+          >
+            <img src="imagens/icone-leitura.png" alt="Ícone Leitura" />
+            <span> Deficiência Motora</span>
+          </a>
+
+          <a
+            href="#diretrizes-deficiencia-cognitivaneural"
+            aria-label="Ir para Diretrizes sobre Deficiência Cognitiva e Neural"
+            role="listitem"
+          >
+            <img src="imagens/icone-leitura.png" alt="Ícone Leitura" />
+            <span> Deficiência Cognitiva e Neural</span>
+          </a>
+
+          <a
+            href="#diretrizes-tea"
+            aria-label="Ir para Diretrizes sobre Transtorno do Espectro Autista"
+            role="listitem"
+          >
+            <img src="imagens/icone-leitura.png" alt="Ícone Leitura" />
+            <span> Transtorno do Espectro Autista</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--DIRETRIZES VISUAIS-->
+    <section
+      class="secaoDeficiencias"
+      id="diretrizes-deficiencia-visual"
+      role="region"
+      aria-label="Diretrizes Deficiencia Visual"
+    >
+      <div
+        class="titulo-secaoDeficiencias"
+        tabindex="0"
+        role="heading"
+        aria-level="2"
+      >
+        Diretrizes de Acessibilidade Web para Deficiência Visual
+      </div>
+
+      <div
+        class="container text-center"
+        role="region"
+        aria-label="Seção Principal"
+        tabindex="0"
+      >
+        <div
+          id="containerDeficienciaVisual"
+          class="row containerCards"
+          role="group"
+          aria-label="Itens Alinhados na Linha"
+        ></div>
+      </div>
+      <div class="container-linkRetornar">
+        <a
+          href="#main"
+          class="linkRetornar"
+          aria-label="Retornar para o início da página"
+          >Retornar para o início da página</a
+        >
+      </div>
+    </section>
+
+    <!--DIRETRIZES AUDITIVAS-->
+    <section
+      class="secaoDeficiencias"
+      id="diretrizes-deficiencia-auditiva"
+      role="region"
+      aria-label="Diretrizes Deficiencia Auditiva"
+    >
+      <div
+        class="titulo-secaoDeficiencias"
+        tabindex="0"
+        role="heading"
+        aria-level="3"
+      >
+        Diretrizes de Acessibilidade Web para Deficiência Auditiva
+      </div>
+
+      <div
+        class="container text-center"
+        role="region"
+        aria-label="Seção Principal"
+        tabindex="0"
+      >
+        <div
+          id="containerDeficienciaAuditiva"
+          class="row containerCards"
+          role="group"
+          aria-label="Itens Alinhados na Linha"
+        ></div>
+      </div>
+      <div class="container-linkRetornar">
+        <a
+          href="#main"
+          class="linkRetornar"
+          aria-label="Retornar para o início da página"
+          >Retornar para o início da página</a
+        >
+      </div>
+    </section>
+
+    <!--DIRETRIZES MOTORAS-->
+    <section
+      class="secaoDeficiencias"
+      id="diretrizes-deficiencia-motora"
+      role="region"
+      aria-label="Diretrizes Deficiencia Motora"
+    >
+      <div
+        class="titulo-secaoDeficiencias"
+        tabindex="0"
+        role="heading"
+        aria-level="4"
+      >
+        Diretrizes de Acessibilidade Web para Deficiência Motora
+      </div>
+
+      <div
+        class="container text-center"
+        role="region"
+        aria-label="Seção Principal"
+        tabindex="0"
+      >
+        <div
+          id="containerDeficienciaMotora"
+          class="row containerCards"
+          role="group"
+          aria-label="Itens Alinhados na Linha"
+        ></div>
+      </div>
+      <div class="container-linkRetornar">
+        <a
+          href="#main"
+          class="linkRetornar"
+          aria-label="Retornar para o início da página"
+          >Retornar para o início da página</a
+        >
+      </div>
+    </section>
+
+    <!--DIRETRIZES DEFICIENCIA COGNITIVA E NEURAL-->
+    <section
+      class="secaoDeficiencias"
+      id="diretrizes-deficiencia-cognitivaneural"
+      role="region"
+      aria-label="Diretrizes Deficiencia Cognitiva e Neural"
+    >
+      <div
+        class="titulo-secaoDeficiencias"
+        tabindex="0"
+        role="heading"
+        aria-level="5"
+      >
+        Diretrizes de Acessibilidade Web para Deficiência Cognitiva e Neural
+      </div>
+
+      <div
+        class="container text-center"
+        role="region"
+        aria-label="Seção Principal"
+        tabindex="0"
+      >
+        <div
+          id="containerDeficienciaCognitivaNeural"
+          class="row containerCards"
+          role="group"
+          aria-label="Itens Alinhados na Linha"
+        ></div>
+      </div>
+      <div class="container-linkRetornar">
+        <a
+          href="#main"
+          class="linkRetornar"
+          aria-label="Retornar para o início da página"
+          >Retornar para o início da página</a
+        >
+      </div>
+    </section>
+
+    <!-- DIRETRIZES DO TRANSTORNO ESPECTRO AUTISTA -->
+    <section
+      class="secaoDeficiencias"
+      id="diretrizes-tea"
+      role="region"
+      aria-label="Diretrizes Transtorno Espectro Autista"
+    >
+      <div
+        class="titulo-secaoDeficiencias"
+        tabindex="0"
+        role="heading"
+        aria-level="6"
+      >
+        Diretrizes de Acessibilidade Web para Transtorno Espectro Autista
+      </div>
+
+      <div
+        class="container text-center"
+        role="region"
+        aria-label="Seção Principal"
+        tabindex="0"
+      >
+        <div
+          id="containerTEA"
+          class="row containerCards"
+          role="group"
+          aria-label="Itens Alinhados na Linha"
+        ></div>
+      </div>
+      <div class="container-linkRetornar">
+        <a
+          href="#main"
+          class="linkRetornar"
+          aria-label="Retornar para o início da página"
+          >Retornar para o início da página</a
+        >
+      </div>
+    </section>
+
+    <section
+      class="secaoDeficiencias"
+      id="referencias-diretrizes"
+      role="region"
+      aria-label=" Referências das diretrizes de acessibilidade "
+    >
+      <div
+        class="titulo-secaoDeficiencias"
+        tabindex="0"
+        role="heading"
+        aria-level="7"
+      >
+        Referências das diretrizes de acessibilidade web apresentadas
+      </div>
+
+      <div class="container">
+        <ul class="list-group containerCards">
+          <li id="list-group-item1" class="list-group-item">
+            1. KESSWANI, Nishtha; KUMAR, Sanjay. Government website
+            accessibility: a cross-country analysis of G7 and BRICS countries.
+            Universal Access in the Information Society, p. 1-16, 2021.
+          </li>
+          <li id="list-group-item2" class="list-group-item">
+            2. ERASLAN, Sukru et al. Web users with autism: eye tracking
+            evidence for differences. Behaviour & Information Technology, v. 38,
+            n. 7, p. 678-700, 2019.
+          </li>
+          <li id="list-group-item3" class="list-group-item">
+            3. GUTIÉRREZ, Manuel Martínez; CÁCERES, José Rafael Rojano.
+            Evaluating the effectiveness of accessible websites for deaf users.
+            Universal Access in the Information Society, v. 22, n. 4, p.
+            1153-1161, 2023.
+          </li>
+          <li id="list-group-item4" class="list-group-item">
+            4. PEREIRA, Letícia Seixas; ARCHAMBAULT, Dominique. Correlating
+            navigation barriers on web 2.0 with accessibility guidelines. In:
+            Computers Helping People with Special Needs: 16th International
+            Conference, ICCHP 2018, Linz, Austria, July 11-13, 2018,
+            Proceedings, Part I 16. Springer International Publishing, 2018. p.
+            13-21.
+          </li>
+          <li id="list-group-item5" class="list-group-item">
+            5. ALNFIAI, Mrim; ALHAKAMI, Wajdi. The Accessibility of Taif
+            University Blackboard for Visually Impaired Students. IJCSNS
+            International Journal of Computer Science and Network Security, v.
+            21, n. 6, 2021.
+          </li>
+          <li id="list-group-item6" class="list-group-item">
+            6. SANCHEZ‐GORDON, Sandra et al. Integration of accessibility design
+            patterns with the software implementation process of ISO/IEC 29110.
+            Journal of Software: Evolution and Process, v. 31, n. 1, p. e1987,
+            2019.
+          </li>
+          <li id="list-group-item7" class="list-group-item">
+            7. GONÇALVES, Ramiro et al. Evaluation of e-commerce websites
+            accessibility and usability: an e-commerce platform analysis with
+            the inclusion of blind users. Universal Access in the Information
+            Society, v. 17, p. 567-583, 2018.
+          </li>
+          <li id="list-group-item8" class="list-group-item">
+            8. ALONSO-VIRGOS, Lucia et al. Design specific user interfaces for
+            people with down syndrome using suitable WCAG 2.0 guidelines.
+            Journal of Ambient Intelligence and Humanized Computing, v. 9, p.
+            1359-1374, 2018.
+          </li>
+          <li id="list-group-item9" class="list-group-item">
+            9. ISMAIL, Abid; KUPPUSAMY, K. S. Web accessibility investigation
+            and identification of major issues of higher education websites with
+            statistical measures: A case study of college websites. Journal of
+            King Saud University-Computer and Information Sciences, v. 34, n. 3,
+            p. 901-911, 2022.
+          </li>
+          <li id="list-group-item10" class="list-group-item">
+            10. ISMAIL, Abid; KUPPUSAMY, K. S. Accessibility of Indian
+            universities’ homepages: An exploratory study. Journal of King Saud
+            University-Computer and Information Sciences, v. 30, n. 2, p.
+            268-278, 2018.
+          </li>
+          <li id="list-group-item11" class="list-group-item">
+            11. SCANLON, Erin et al. Physics webpages create barriers to
+            participation for people with disabilities: five common web
+            accessibility errors and possible solutions. International Journal
+            of STEM Education, v. 8, n. 1, p. 1-16, 2021.
+          </li>
+          <li id="list-group-item12" class="list-group-item">
+            12. PAUL, Surjit. Accessibility analysis using WCAG 2.1: evidence
+            from Indian e-government websites. Universal access in the
+            information society, v. 22, n. 2, p. 663-669, 2023.
+          </li>
+          <li id="list-group-item13" class="list-group-item">
+            13. NOGUEIRA, Lisa; GONÇALVES, Ramiro. Health Sector Web
+            Accessibility. In: 2021 16th Iberian Conference on Information
+            Systems and Technologies (CISTI). IEEE, 2021. p. 1-6.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="plus/script.js"></script>
+  </body>
+</html>
